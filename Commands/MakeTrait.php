@@ -47,8 +47,8 @@ class MakeTrait extends Command
     public function handle()
     {
         $this->getParameters();
-        $foler = $this->createFolder();
-        if ($foler) {
+        $folder = $this->createFolder();
+        if ($folder) {
             $file = $this->createFile();
             if ($file) {
                 $this->info('Created trait with name '.$this->fileName);
